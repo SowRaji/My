@@ -1,0 +1,55 @@
+.flex1{
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1
+}
+.dFlex{
+    display: flex
+}
+.alignVertical{
+    align-items: center
+}
+.flexshrink{
+    flex-shrink: 1
+}
+.navBar{
+    height: 100px;
+    padding-left: 52px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    z-index: 1;
+}
+    .navHeader{
+        font-size: 32px;
+        color: #000;
+        font-weight: 700
+    }
+
+    .navRghtPnl{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-right: 62px
+    }
+    .navRght_txt{
+        font-size: 18px;
+        letter-spacing: 4px;
+        cursor: pointer;
+        line-height: 2;
+        text-transform: uppercase;
+        margin-right:44px;
+    /* border-bottom: 5px solid transparent */
+    }
+    .actve{
+        position: absolute;
+        bottom: -10px;
+        width: 70px;
+        border-bottom: 5px solid #483F40;
+    }
+   
+.navRght_txt a{
+        all: unset
+    }
+    

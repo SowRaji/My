@@ -1,0 +1,85 @@
+.flex1{
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1
+}
+.dFlex{
+    display: flex
+}
+.alignVertical{
+    align-items: center
+}
+.flexCol{
+    flex-direction: column
+}
+
+.midContnr{
+    background-color: #E1E1E1;
+    padding: 30px 110px 0 110px;
+    height: calc(100% - 130px)
+  
+}
+.overFlow{
+    overflow-y: auto
+}
+.txtAlCnt{
+    text-align: center
+}
+.rghtHdr_abt{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.rghtHdr_abt1{
+    letter-spacing: 4px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+.rghtHdr_abt1::after{
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid #000;
+    width: 360px;
+    bottom: -30px;
+    left: -80px
+}
+.wrapper{
+   margin-top: 100px 
+}
+.mid_Content{
+    margin-left: 80px
+}
+.hdrWrap{
+margin-left: 100px
+}
+.rghtHdr2{
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #62554F;
+    margin-top: 12px;
+    text-transform: uppercase
+}
+.rghtContent{
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+}
+.rghtHdr{
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.footer{
+    flex-wrap: wrap
+}
+.profilePng{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+        }
