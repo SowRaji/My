@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "../Home/Homepage";
-import About from "../About/About";
-import Projects from "../Projects/Projects";
+// import Home from "../Home/Homepage";
+// import About from "../About/About";
+// import Projects from "../Projects/Projects";
 import style from './Main.module.css';
-import Contact from "../Contacts/Contact";
+// import Contact from "../Contacts/Contact";
 import {Link} from "react-router-dom";
 
 class Main extends React.Component{
