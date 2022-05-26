@@ -14,7 +14,7 @@ class About extends React.Component {
               <div className={`${style.dFlex} ${style.alignVertical} ${style.wrapper}`}>
       
             <div className={`${style.mid_Content} ${style.dFlex} ${style.alignVertical}`}>
-            <img src={img} className={style.profilePng} />
+            <img src={img} alt='ProfilePic' className={style.profilePng} />
 <div className={style.hdrWrap}>
               <div className={style.rghtHdr2}> FRONTEND DEVELOPER</div>
               <div className={style.rghtContent}>

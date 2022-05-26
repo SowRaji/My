@@ -10,7 +10,7 @@ class Home extends React.Component {
         <div className={style.wholeWrap}>
          
           <div className={style.midContnr}>
-            <img src={img} className={style.profilePng} />
+            <img src={img} alt='ProfilePic' className={style.profilePng} />
             <div className={style.mid_Content}>
               <div className={style.rghtHdr}>Raji K</div>
               <div className={style.rghtHdr2}> FRONTEND DEVELOPER</div>
