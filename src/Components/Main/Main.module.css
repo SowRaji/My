@@ -15,18 +15,17 @@
 .navBar{
     height: 100px;
     padding-left: 52px;
-    background-color: #f4f4f4;
     box-sizing: border-box;
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 100%;
     z-index: 1;
 }
-    .navHeader{
-        font-size: 32px;
+.navHeader{
+    font-size: 32px;
         color: #000;
         font-weight: 700
     }
-
+    
     .navRghtPnl{
         display: flex;
         align-items: center;
@@ -40,7 +39,7 @@
         line-height: 2;
         text-transform: uppercase;
         margin-right:44px;
-    /* border-bottom: 5px solid transparent */
+        /* border-bottom: 5px solid transparent */
     }
     .actve{
         position: absolute;
@@ -49,7 +48,21 @@
         border-bottom: 5px solid #483F40;
     }
    
-.navRght_txt a{
+    .navRght_txt a{
         all: unset
     }
-    
+    .navBar.light{
+        background-color: #f4f4f4;
+        
+    }
+    .navBar.dark{
+        background-color: #1B2133;
+        
+    }
+    .dark .navHeader,.dark .navRght_txt{
+        color: #fff;
+    }
+.dark .actve{
+    border-bottom: 5px solid #fff;
+
+}

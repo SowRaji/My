@@ -1,15 +1,26 @@
 import React from "react";
 import style from "./Home.module.css";
 import img from "./profimage.jpg";
-import Button from '../Button/Button.js'
+import Button from '../Button/Button.js';
+import { ThemeConsumer } from "../Theme/Theme";
 
 class Home extends React.Component {
+  componentDidMount(){
+  
+    this.props.setmountOrunmount("Home")
+  }
+  componentWillUnmount(){
+  
+    this.props.setmountOrunmount("")
+  }
   render() {
     return (
-      <>
-        <div className={style.wholeWrap}>
+      
+      <ThemeConsumer>{
+        ({theme,toggleTheme})=>(
+           <div className={style.wholeWrap}>
          
-          <div className={style.midContnr}>
+          <div className={`${style.midContnr} ${style[theme]}`}>
             <img src={img} alt='ProfilePic' className={style.profilePng} />
             <div className={style.mid_Content}>
               <div className={style.rghtHdr}>Raji K</div>
@@ -26,7 +37,11 @@ class Home extends React.Component {
               </div>
             </div>
           </div> </div>
-      </>
+      )
+    }
+
+       
+      </ThemeConsumer>
     );
   }
 }

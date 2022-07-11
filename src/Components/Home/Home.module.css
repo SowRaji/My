@@ -1,12 +1,20 @@
 
 .midContnr{
-background-color: #E1E1E1;
+/* background-color: #E1E1E1; */
 padding: 0 100px;
 display: flex;
 height: 100%;
 align-items: center;
 justify-content: center;
 flex-grow: 1
+}
+.light.midContnr
+{
+    background-color: #E1E1E1;
+}
+.dark.midContnr
+{
+    background-color: #232B38;
 }
 .flex1{
     min-width: 0;
@@ -84,4 +92,13 @@ border-radius: 10px;
 }
 .ml100{
     margin-left: 100px;
+}
+.dark .rghtHdr2{
+    color: #D48A68;
+}
+.dark .rghtHdr{
+    color: #fff     ;
+}
+.dark .rghtContent{
+    color: #fff;
 }

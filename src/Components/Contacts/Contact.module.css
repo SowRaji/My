@@ -92,3 +92,7 @@ background-color: transparent;
 .alignEnd{
     justify-content: flex-end;
 }
+.dark.cntWrap{
+    background-color: 
+    #232B38;
+}

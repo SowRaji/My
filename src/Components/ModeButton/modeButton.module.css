@@ -1,0 +1,38 @@
+
+.slideinp {
+    background-color: #c8cbdc;
+    height: 18px;
+    width: 30px;
+    border-radius: 12px;
+    position: relative;
+    /* transform: scale(0.8); */
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .slideinp::after {
+    height: 14px;
+    width: 14px;
+    background-color: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    transition: ease-in 200ms;
+  }
+  
+  .checkboxinp {
+    position: relative;
+    height: 18px;
+    width: 31px;
+  }
+  .checkboxinp input {
+    display: none;
+  }
+  .checkboxinp input:checked ~ .slideinp::after {
+    transform: translateX(11px);
+  }
+  .checkboxinp input:checked ~ .slideinp {
+    background-color: #fff;
+  }

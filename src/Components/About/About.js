@@ -3,12 +3,20 @@ import style from "./About.module.css";
 // import style from '../Button/Button.module.css'
 import img from './profimage.jpg'
 import Button from '../Button/Button.js'
+import { ThemeConsumer } from "../Theme/Theme";
 class About extends React.Component {
+  componentDidMount(){
+   
+    this.props.setmountOrunmount("About")
+  }
+  componentWillUnmount(){
+  
+    this.props.setmountOrunmount("")
+  }
   render() {
     return (
-      <>
-       
-          <div className={`${style.flex1} ${style.dFlex}  ${style.flexCol} ${style.midContnr} ${style.overFlow}`}>
+      <ThemeConsumer>{
+        ({theme,toggleTheme})=>( <div className={`${style.flex1} ${style.dFlex}  ${style.flexCol} ${style.midContnr} ${style.overFlow} ${style[theme]}`}>
                 <div className={style.txtAlCnt}><div className={style.rghtHdr_abt}>WHO AM I</div>
               <div className={style.rghtHdr_abt1}>About</div></div>
               <div className={`${style.dFlex} ${style.alignVertical} ${style.wrapper}`}>
@@ -38,7 +46,12 @@ class About extends React.Component {
              </div> </div></div>
             </div>
           </div>
-      </>
+
+        )
+        }
+       
+         
+      </ThemeConsumer>
     );
   }
 }

@@ -83,3 +83,16 @@ margin-left: 100px
     width: 350px;
     border-radius: 10px;
         }
+.dark.midContnr{
+    background-color: 
+    #232B38;
+}
+.dark .rghtHdr,.dark .rghtHdr_abt,.dark .rghtHdr_abt1,.dark .rghtHdr2{
+    color: #fff;
+}
+.dark .rghtContent{
+    color: #E2E4E6;
+}
+.dark .rghtHdr_abt1::after{
+    border-bottom: 3px solid #fff;
+}
